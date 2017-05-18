@@ -49,20 +49,17 @@ namespace FileStorage.DataAccess.Sql.Tests
         [TestMethod]
         public void ShouldCreateAndGetFile()
         {
-            //arrange
-            var content = Encoding.UTF8.GetBytes("Hello");
             var file = new File
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-                //Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
-            //act
+
             var newFile = _filesRepository.Add(file);
             var result = _filesRepository.GetFileInfo(newFile.FileId);
-            //asserts
+
             Assert.AreEqual(file.Owner.UserId, result.Owner.UserId);
             Assert.AreEqual(file.Name, result.Name);
             Assert.AreEqual(file.DateOfCreation.ToString(), result.DateOfCreation.ToString());
@@ -71,21 +68,19 @@ namespace FileStorage.DataAccess.Sql.Tests
         [TestMethod]
         public void ShoulUpdateAndGetFileContent()
         {
-            //arrange
             var file = new File
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-                //Content = Encoding.UTF8.GetBytes(""),
                 Size = 0,
                 Owner = TestUser
             };
             var content = Encoding.UTF8.GetBytes("Hello");
             var newFile = _filesRepository.Add(file);
-            //act
+
             _filesRepository.UpdateContent(newFile.FileId, content);
             var resultContent = _filesRepository.GetFileContent(newFile.FileId);
-            //asserts
+
             Assert.IsTrue(content.SequenceEqual(resultContent));
         }
 
@@ -93,13 +88,11 @@ namespace FileStorage.DataAccess.Sql.Tests
         [ExpectedException(typeof(ArgumentException))]
         public void ShouldDeleteFile()
         {
-            var content = Encoding.UTF8.GetBytes("Hello");
             var file = new File
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-                //Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
 
@@ -112,22 +105,18 @@ namespace FileStorage.DataAccess.Sql.Tests
         public void ShouldGetUserFiles()
         {
             List<File> files = new List<File>();
-            var content = Encoding.UTF8.GetBytes("Hello from file 1");
             var file1 = new File
             {
                 Name = "testFile1",
                 DateOfCreation = DateTime.Now,
-                //Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
-            content = Encoding.UTF8.GetBytes("Hello from file 2");
             var file2 = new File
             {
                 Name = "testFile2",
                 DateOfCreation = DateTime.Now,
-                //Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
             files.Add(file1);
@@ -148,13 +137,11 @@ namespace FileStorage.DataAccess.Sql.Tests
         [TestMethod]
         public void ShouldGiveAccessToFileAndGetAllowedFiles()
         {
-            var content = Encoding.UTF8.GetBytes("Hello");
             var file = new File
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-                //Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
 
@@ -171,13 +158,11 @@ namespace FileStorage.DataAccess.Sql.Tests
         [TestMethod]
         public void ShouldDeleteAccessToFile()
         {
-            var content = Encoding.UTF8.GetBytes("Hello");
             var file = new File
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-               // Content = content,
-                Size = content.Length,
+                Size = 0,
                 Owner = TestUser
             };
 

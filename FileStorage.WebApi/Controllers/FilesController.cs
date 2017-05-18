@@ -36,7 +36,6 @@ namespace FileStorage.WebApi.Controllers
             return _filesRepository.GetFileInfo(id);
         }
         
-
         [HttpGet]
         [Route("api/files/{id}/content")]
         public byte[] GetFileContent(Guid id)

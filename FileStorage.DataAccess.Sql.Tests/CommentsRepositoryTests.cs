@@ -33,7 +33,6 @@ namespace FileStorage.DataAccess.Sql.Tests
             {
                 Name = "testFile",
                 DateOfCreation = DateTime.Now,
-                //Content = Encoding.UTF8.GetBytes(""),
                 Size = 0,
                 Owner = TestUser
             };
