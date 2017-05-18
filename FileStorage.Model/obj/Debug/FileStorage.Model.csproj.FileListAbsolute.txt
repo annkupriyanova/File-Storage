@@ -1,0 +1,9 @@
+C:\Users\annku\documents\visual studio 2015\Projects\FileStorage\FileStorage.Model\bin\Debug\FileStorage.Model.dll
+C:\Users\annku\documents\visual studio 2015\Projects\FileStorage\FileStorage.Model\bin\Debug\FileStorage.Model.pdb
+C:\Users\annku\documents\visual studio 2015\Projects\FileStorage\FileStorage.Model\obj\Debug\FileStorage.Model.csprojResolveAssemblyReference.cache
+C:\Users\annku\documents\visual studio 2015\Projects\FileStorage\FileStorage.Model\obj\Debug\FileStorage.Model.dll
+C:\Users\annku\documents\visual studio 2015\Projects\FileStorage\FileStorage.Model\obj\Debug\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Debug\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Debug\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Debug\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Debug\FileStorage.Model.pdb

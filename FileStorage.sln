@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.Model", "FileStorage.Model\FileStorage.Model.csproj", "{440613D2-346E-4A39-95D0-361516EBC1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.DataAccess", "FileStorage.DataAccess\FileStorage.DataAccess.csproj", "{08FA81C3-11E3-4AB4-A575-BA36F8C5E24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.DataAccess.Sql", "FileStorage.DataAccess.Sql\FileStorage.DataAccess.Sql.csproj", "{95976BCB-FF85-4C66-8EFA-DDF39EAC4E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.DataAccess.Sql.Tests", "FileStorage.DataAccess.Sql.Tests\FileStorage.DataAccess.Sql.Tests.csproj", "{D5985F60-37F7-405C-B13A-595D6C20D0A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.WebApi", "FileStorage.WebApi\FileStorage.WebApi.csproj", "{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{440613D2-346E-4A39-95D0-361516EBC1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440613D2-346E-4A39-95D0-361516EBC1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440613D2-346E-4A39-95D0-361516EBC1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440613D2-346E-4A39-95D0-361516EBC1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FA81C3-11E3-4AB4-A575-BA36F8C5E24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FA81C3-11E3-4AB4-A575-BA36F8C5E24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FA81C3-11E3-4AB4-A575-BA36F8C5E24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FA81C3-11E3-4AB4-A575-BA36F8C5E24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95976BCB-FF85-4C66-8EFA-DDF39EAC4E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95976BCB-FF85-4C66-8EFA-DDF39EAC4E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95976BCB-FF85-4C66-8EFA-DDF39EAC4E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95976BCB-FF85-4C66-8EFA-DDF39EAC4E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5985F60-37F7-405C-B13A-595D6C20D0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5985F60-37F7-405C-B13A-595D6C20D0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5985F60-37F7-405C-B13A-595D6C20D0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5985F60-37F7-405C-B13A-595D6C20D0A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
