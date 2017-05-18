@@ -124,22 +124,5 @@ namespace FileStorage.DataAccess.Sql
             }
         } 
 
-        /*
-        public void ChangePassword(Guid id, string password)
-        {
-            using (var connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-
-                using (var command = connection.CreateCommand())
-                {
-                    command.CommandText = "UPDATE Users SET Password = @Password WHERE UserId = @UserId";
-                    command.Parameters.AddWithValue("@Password", password);
-                    command.Parameters.AddWithValue("@UserId", id);
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-        */
     }
 }

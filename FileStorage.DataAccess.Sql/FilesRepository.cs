@@ -28,11 +28,9 @@ namespace FileStorage.DataAccess.Sql
                     DateTime date = DateTime.Now;
 
                     command.CommandText = "INSERT INTO Files (FileId, Name, DateOfCreation, Size, OwnerId) VALUES (@FileId, @Name, @DateOfCreation,  @Size, @OwnerId)";
-                    //command.CommandText = "INSERT INTO Files (FileId, Name, DateOfCreation, Content, Size, OwnerId) VALUES (@FileId, @Name, @DateOfCreation, @Content, @Size, @OwnerId)";
                     command.Parameters.AddWithValue("@FileId", id);
                     command.Parameters.AddWithValue("@Name", file.Name);
                     command.Parameters.AddWithValue("@DateOfCreation", date);
-                    //command.Parameters.AddWithValue("@Content", file.Content);
                     command.Parameters.AddWithValue("@Size", 0);
                     command.Parameters.AddWithValue("@OwnerId", file.Owner.UserId);
                     command.ExecuteNonQuery();

@@ -7,3 +7,4 @@ C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Debug\FileStorage
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Debug\FileStorage.Model.pdb
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Debug\FileStorage.Model.dll
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Debug\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Debug\FileStorage.Model.csprojResolveAssemblyReference.cache
