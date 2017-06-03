@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.DataAccess.Sql.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.WebApi", "FileStorage.WebApi\FileStorage.WebApi.csproj", "{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.Log", "FileStorage.Log\FileStorage.Log.csproj", "{5EED8CF8-A3D7-4040-B034-0C186320C2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.WinForms", "FileStorage.WinForms\FileStorage.WinForms.csproj", "{772C5D1F-8A6A-45BB-8D56-BFFBCF87207F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B2E8BF-94ED-4BD0-9F2E-EC44280A18A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EED8CF8-A3D7-4040-B034-0C186320C2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EED8CF8-A3D7-4040-B034-0C186320C2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EED8CF8-A3D7-4040-B034-0C186320C2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EED8CF8-A3D7-4040-B034-0C186320C2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772C5D1F-8A6A-45BB-8D56-BFFBCF87207F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772C5D1F-8A6A-45BB-8D56-BFFBCF87207F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772C5D1F-8A6A-45BB-8D56-BFFBCF87207F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772C5D1F-8A6A-45BB-8D56-BFFBCF87207F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,6 +50,10 @@
       <Project>{08fa81c3-11e3-4ab4-a575-ba36f8c5e24f}</Project>
       <Name>FileStorage.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FileStorage.Log\FileStorage.Log.csproj">
+      <Project>{5eed8cf8-a3d7-4040-b034-0c186320c2b4}</Project>
+      <Name>FileStorage.Log</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FileStorage.Model\FileStorage.Model.csproj">
       <Project>{440613d2-346e-4a39-95d0-361516ebc1f7}</Project>
       <Name>FileStorage.Model</Name>

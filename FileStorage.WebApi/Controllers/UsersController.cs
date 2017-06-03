@@ -3,9 +3,6 @@ using FileStorage.DataAccess.Sql;
 using FileStorage.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace FileStorage.WebApi.Controllers
@@ -26,40 +23,93 @@ namespace FileStorage.WebApi.Controllers
         [HttpPost]
         public User CreateUser([FromBody]User user)
         {
-            return _usersRepository.Add(user.Name, user.Email);
+            try
+            {
+                var newUser = _usersRepository.Add(user.Name, user.Email);
+                Log.Logger.Servicelog.Info("Create user, id: {0}", newUser.UserId);
+                return newUser;
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while creating new user | " + ex.Message);
+                throw;
+            }
+           
         }
 
         [HttpDelete]
         public void DeleteUser(Guid id)
         {
-            _usersRepository.Delete(id);
+            try
+            {
+                Log.Logger.Servicelog.Info("Delete user, id: {0}", id);
+                _usersRepository.Delete(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while deleting user, id: {0} | " + ex.Message, id);
+                throw;
+            }
+            
         }
 
         [HttpGet]
         public User GetUser(Guid id)
         {
-            return _usersRepository.Get(id);
+            try
+            {
+                return _usersRepository.Get(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting user, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
 
         [Route("api/users/{id}/files")]
         [HttpGet]
         public IEnumerable<File> GetUserFiles(Guid id)
         {
-            return _filesRepository.GetUserFiles(id);
+            try
+            {
+                return _filesRepository.GetUserFiles(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting user files, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
 
         [Route("api/users/{id}/sharings")]
         [HttpGet]
         public IEnumerable<File> GetUserAllowedFiles(Guid id)
         {
-            return _filesRepository.GetAllowedFiles(id);
+            try
+            {
+                return _filesRepository.GetAllowedFiles(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting user allowed files, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
 
         [HttpGet]
         [Route("api/users/{id}/comments")]
         public IEnumerable<Comment> GetUserComments(Guid id)
         {
-            return _commentsRepository.GetUserComments(id);
+            try
+            {
+                return _commentsRepository.GetUserComments(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting user comments, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
     }
 }

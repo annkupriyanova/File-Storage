@@ -1,0 +1,13 @@
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.DataAccess.Sql.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.DataAccess.Sql.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.DataAccess.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.DataAccess.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\obj\Release\FileStorage.DataAccess.Sql.csprojResolveAssemblyReference.cache
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\obj\Release\FileStorage.DataAccess.Sql.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\obj\Release\FileStorage.DataAccess.Sql.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.Log.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\NLog.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\FileStorage.Log.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess.Sql\bin\Release\NLog.xml

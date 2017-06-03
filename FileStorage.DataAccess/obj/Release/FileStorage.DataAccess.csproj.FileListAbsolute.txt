@@ -1,0 +1,7 @@
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\bin\Release\FileStorage.DataAccess.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\bin\Release\FileStorage.DataAccess.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\bin\Release\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\bin\Release\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\obj\Release\FileStorage.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\obj\Release\FileStorage.DataAccess.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.DataAccess\obj\Release\FileStorage.DataAccess.pdb

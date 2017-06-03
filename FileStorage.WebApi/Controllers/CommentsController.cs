@@ -2,10 +2,6 @@
 using FileStorage.DataAccess.Sql;
 using FileStorage.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace FileStorage.WebApi.Controllers
@@ -26,28 +22,64 @@ namespace FileStorage.WebApi.Controllers
         [HttpPost]
         public Comment CreateComment([FromBody]Comment comment)
         {
-            return _commentsRepository.Add(comment);
+            try
+            {
+                var newComment = _commentsRepository.Add(comment);
+                Log.Logger.Servicelog.Info("Create comment, id: {0}", newComment.CommentId);
+                return newComment;
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while creating new comment | " + ex.Message);
+                throw;
+            }
         }
 
         [HttpGet]
         [Route("api/comments/{id}")]
         public Comment GetComment(Guid id)
         {
-            return _commentsRepository.Get(id);
+            try
+            {
+                return _commentsRepository.Get(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting comment, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
 
         [HttpDelete]
         [Route("api/comments/{id}")]
         public void DeleteComment(Guid id)
         {
-            _commentsRepository.Delete(id);
+            try
+            {
+                Log.Logger.Servicelog.Info("Delete comment, id: {0}", id);
+                _commentsRepository.Delete(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while deleting comment, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
 
         [HttpPut]
         [Route("api/comments/{id}")]
         public void EditComment(Guid id, [FromBody]Comment comment)
         {
-            _commentsRepository.Edit(id, comment.Text);
+            try
+            {
+                Log.Logger.Servicelog.Info("Edit comment, id: {0}", id);
+                _commentsRepository.Edit(id, comment.Text);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while editting comment, id: {0} | " + ex.Message, id);
+                throw;
+            }
         }
     }
 }

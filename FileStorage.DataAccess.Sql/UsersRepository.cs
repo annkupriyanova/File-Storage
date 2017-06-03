@@ -32,10 +32,18 @@ namespace FileStorage.DataAccess.Sql
                     command.Parameters.AddWithValue("@Name", name);
                     command.Parameters.AddWithValue("@Email", email);
 
-                    try
-                    {
+                    //try
+                    //{
                         command.ExecuteNonQuery();
-                    }
+
+                        return new User
+                        {
+                            UserId = id,
+                            Name = name,
+                            Email = email,
+                        };
+                    //}
+                    /*
                     catch (SqlException ex)
                     {
                         for (int i = 0; i < ex.Errors.Count; i++)
@@ -47,14 +55,9 @@ namespace FileStorage.DataAccess.Sql
                                 "Procedure: " + ex.Errors[i].Procedure + "\n");
                         }
                         Console.WriteLine(errorMessages.ToString());
+                        throw;
                     }
-
-                    return new User
-                    {
-                        UserId = id,
-                        Name = name,
-                        Email = email,
-                    };
+                    */
                 }                    
             }
         }

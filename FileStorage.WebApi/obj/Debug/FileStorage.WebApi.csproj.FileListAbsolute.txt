@@ -32,3 +32,8 @@ C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\System.Web.Http.
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\obj\Debug\FileStorage.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\obj\Debug\FileStorage.WebApi.dll
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\obj\Debug\FileStorage.WebApi.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\NLog.config
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\FileStorage.Log.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\NLog.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\FileStorage.Log.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WebApi\bin\NLog.xml

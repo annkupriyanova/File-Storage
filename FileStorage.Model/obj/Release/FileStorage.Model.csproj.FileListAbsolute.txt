@@ -1,0 +1,4 @@
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Release\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\bin\Release\FileStorage.Model.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Release\FileStorage.Model.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Model\obj\Release\FileStorage.Model.pdb

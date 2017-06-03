@@ -1,0 +1,7 @@
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Debug\FileStorage.Log.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Debug\FileStorage.Log.pdb
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Debug\NLog.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Debug\NLog.xml
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Debug\FileStorage.Log.csprojResolveAssemblyReference.cache
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Debug\FileStorage.Log.dll
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Debug\FileStorage.Log.pdb
