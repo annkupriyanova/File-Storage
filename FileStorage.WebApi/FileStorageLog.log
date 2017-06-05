@@ -29,3 +29,33 @@
 2017-06-05 20:59:18.0658|INFO|FileStorage.Log.Logger|Give access to file, id: 8623128f-0028-4512-805a-0536c5692d6c to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
 2017-06-05 21:00:12.4240|INFO|FileStorage.Log.Logger|Delete access to file, id: 8623128f-0028-4512-805a-0536c5692d6c for user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
 2017-06-06 00:29:52.5877|INFO|FileStorage.Log.Logger|Give access to file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:06:08.3827|INFO|FileStorage.Log.Logger|Create file, id: ec94107e-71ea-4dfb-a93b-05f1d3addce1
+2017-06-06 01:06:08.4139|INFO|FileStorage.Log.Logger|Update content of file, id: ec94107e-71ea-4dfb-a93b-05f1d3addce1
+2017-06-06 01:06:26.0807|INFO|FileStorage.Log.Logger|Create file, id: 750691d9-28f0-4313-9c3f-007e42811447
+2017-06-06 01:06:26.0947|INFO|FileStorage.Log.Logger|Update content of file, id: 750691d9-28f0-4313-9c3f-007e42811447
+2017-06-06 01:06:31.6125|INFO|FileStorage.Log.Logger|Create file, id: 5a21f2e4-d3c3-4267-9889-e69fbfb41c02
+2017-06-06 01:06:31.6125|INFO|FileStorage.Log.Logger|Update content of file, id: 5a21f2e4-d3c3-4267-9889-e69fbfb41c02
+2017-06-06 01:06:38.2595|INFO|FileStorage.Log.Logger|Create file, id: f42664d3-6157-41a6-88d0-aa0f04616618
+2017-06-06 01:06:38.2751|INFO|FileStorage.Log.Logger|Update content of file, id: f42664d3-6157-41a6-88d0-aa0f04616618
+2017-06-06 01:07:08.1306|INFO|FileStorage.Log.Logger|Create file, id: 1885857e-8827-414d-a0c7-9edf6309b944
+2017-06-06 01:07:08.1462|INFO|FileStorage.Log.Logger|Update content of file, id: 1885857e-8827-414d-a0c7-9edf6309b944
+2017-06-06 01:08:07.1807|INFO|FileStorage.Log.Logger|Delete file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6
+2017-06-06 01:08:07.2340|ERROR|FileStorage.Log.Logger|Error while deleting file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 | Конфликт инструкции DELETE с ограничением REFERENCE "FK_Comment_File". Конфликт произошел в базе данных "Dropbox", таблица "dbo.Comments", column 'FileId'.
+Выполнение данной инструкции было прервано.
+2017-06-06 01:08:29.0135|INFO|FileStorage.Log.Logger|Delete file, id: 8623128f-0028-4512-805a-0536c5692d6c
+2017-06-06 01:08:33.9512|INFO|FileStorage.Log.Logger|Delete file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6
+2017-06-06 01:08:33.9512|ERROR|FileStorage.Log.Logger|Error while deleting file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 | Конфликт инструкции DELETE с ограничением REFERENCE "FK_Comment_File". Конфликт произошел в базе данных "Dropbox", таблица "dbo.Comments", column 'FileId'.
+Выполнение данной инструкции было прервано.
+2017-06-06 01:09:48.0604|INFO|FileStorage.Log.Logger|Create comment, id: f98010d1-7382-4d41-aa24-6e2918fe508e
+2017-06-06 01:12:29.6887|INFO|FileStorage.Log.Logger|Give access to file, id: d28a137a-6fca-41af-8ff0-8d2111e07760 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:12:40.1316|INFO|FileStorage.Log.Logger|Give access to file, id: ec94107e-71ea-4dfb-a93b-05f1d3addce1 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:12:48.1811|INFO|FileStorage.Log.Logger|Give access to file, id: 750691d9-28f0-4313-9c3f-007e42811447 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:12:54.9745|INFO|FileStorage.Log.Logger|Give access to file, id: 5a21f2e4-d3c3-4267-9889-e69fbfb41c02 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:13:05.6930|INFO|FileStorage.Log.Logger|Give access to file, id: f42664d3-6157-41a6-88d0-aa0f04616618 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:16:01.2533|INFO|FileStorage.Log.Logger|Create comment, id: 6cbd7714-801e-4d43-b4e3-0b17ee919175
+2017-06-06 01:30:32.9049|INFO|FileStorage.Log.Logger|Give access to file, id: d28a137a-6fca-41af-8ff0-8d2111e07760 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 01:41:22.1361|INFO|FileStorage.Log.Logger|Create file, id: cdd9d494-7320-45ea-9f44-2905775a301c
+2017-06-06 01:41:22.2149|INFO|FileStorage.Log.Logger|Update content of file, id: cdd9d494-7320-45ea-9f44-2905775a301c
+2017-06-06 01:41:31.3505|INFO|FileStorage.Log.Logger|Delete file, id: cdd9d494-7320-45ea-9f44-2905775a301c
+2017-06-06 01:42:03.8522|INFO|FileStorage.Log.Logger|Create file, id: 053d3a95-ab20-4acf-ac6a-4556c975f7b2
+2017-06-06 01:42:03.8522|INFO|FileStorage.Log.Logger|Update content of file, id: 053d3a95-ab20-4acf-ac6a-4556c975f7b2

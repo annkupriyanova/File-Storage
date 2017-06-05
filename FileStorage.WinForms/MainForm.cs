@@ -15,7 +15,7 @@ namespace FileStorage.WinForms
 {
     public partial class MainForm : Form
     {
-        private readonly Guid _userId = new Guid("705537E6-C136-4C62-A34E-7871961D6D30");
+        private readonly Guid _userId = new Guid("E5277DA8-89F7-4A5F-A7A3-2937FAE9AC17");
         private readonly ServiceClient _client;
 
         public MainForm()

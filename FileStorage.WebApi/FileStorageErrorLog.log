@@ -1,2 +1,6 @@
 2017-06-03 23:38:32.4866|ERROR|FileStorage.Log.Logger|Error while creating new comment | Ссылка на объект не указывает на экземпляр объекта.
 2017-06-03 23:42:10.4449|ERROR|FileStorage.Log.Logger|Error while creating new comment | Ссылка на объект не указывает на экземпляр объекта.
+2017-06-06 01:08:07.2340|ERROR|FileStorage.Log.Logger|Error while deleting file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 | Конфликт инструкции DELETE с ограничением REFERENCE "FK_Comment_File". Конфликт произошел в базе данных "Dropbox", таблица "dbo.Comments", column 'FileId'.
+Выполнение данной инструкции было прервано.
+2017-06-06 01:08:33.9512|ERROR|FileStorage.Log.Logger|Error while deleting file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 | Конфликт инструкции DELETE с ограничением REFERENCE "FK_Comment_File". Конфликт произошел в базе данных "Dropbox", таблица "dbo.Comments", column 'FileId'.
+Выполнение данной инструкции было прервано.

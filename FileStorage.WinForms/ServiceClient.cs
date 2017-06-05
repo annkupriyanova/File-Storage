@@ -10,9 +10,9 @@ namespace FileStorage.WinForms
         private readonly Guid _currentUserId;
         private readonly HttpClient _client = new HttpClient();
 
-        public ServiceClient(string connectionString, Guid currentUserId)
+        public ServiceClient(string connectionString, Guid userId)
         {
-            _currentUserId = currentUserId;
+            _currentUserId = userId;
             _client.BaseAddress = new Uri(connectionString);
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
@@ -20,11 +20,12 @@ namespace FileStorage.WinForms
         /*
         public User CreateUser(User user)
         {
-            var response = _client.PostAsJsonAsync("files", file).Result;
+            var response = _client.PostAsJsonAsync("users", user).Result;
             if (response.IsSuccessStatusCode)
             {
-                var result = response.Content.ReadAsAsync<File>().Result;
-                return result.FileId;
+                var result = response.Content.ReadAsAsync<User>().Result;
+                _currentUserId = result.UserId;
+                return result;
             }
             throw new ServiceException("Error: {0}", response.StatusCode);
         }
