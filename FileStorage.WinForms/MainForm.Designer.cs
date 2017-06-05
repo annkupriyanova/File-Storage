@@ -32,8 +32,10 @@
             this.tcFiles = new System.Windows.Forms.TabControl();
             this.tpUserFiles = new System.Windows.Forms.TabPage();
             this.dgvUserFiles = new System.Windows.Forms.DataGridView();
+            this.Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tpAllowedFiles = new System.Windows.Forms.TabPage();
             this.dgvAllowedFiles = new System.Windows.Forms.DataGridView();
+            this.OwnerEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbFile = new System.Windows.Forms.GroupBox();
             this.btnShareFile = new System.Windows.Forms.Button();
             this.btnAddFile = new System.Windows.Forms.Button();
@@ -42,6 +44,7 @@
             this.btnCreateComment = new System.Windows.Forms.Button();
             this.gbComments = new System.Windows.Forms.GroupBox();
             this.dgvComments = new System.Windows.Forms.DataGridView();
+            this.AuthorEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDeleteComment = new System.Windows.Forms.Button();
             this.lbUserName = new System.Windows.Forms.Label();
             this.commentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +56,6 @@
             this.fileIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfCreationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ownerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fileBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fileIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +64,7 @@
             this.sizeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ownerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fileBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fileBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tcFiles.SuspendLayout();
             this.tpUserFiles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserFiles)).BeginInit();
@@ -73,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.commentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // tcFiles
@@ -80,20 +84,23 @@
             this.tcFiles.Controls.Add(this.tpUserFiles);
             this.tcFiles.Controls.Add(this.tpAllowedFiles);
             this.tcFiles.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tcFiles.Location = new System.Drawing.Point(6, 121);
+            this.tcFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tcFiles.Location = new System.Drawing.Point(8, 65);
+            this.tcFiles.Margin = new System.Windows.Forms.Padding(4);
             this.tcFiles.Name = "tcFiles";
             this.tcFiles.SelectedIndex = 0;
-            this.tcFiles.Size = new System.Drawing.Size(332, 186);
-            this.tcFiles.TabIndex = 8;
+            this.tcFiles.Size = new System.Drawing.Size(587, 289);
+            this.tcFiles.TabIndex = 1;
             this.tcFiles.Selected += new System.Windows.Forms.TabControlEventHandler(this.tcFiles_Selected);
             // 
             // tpUserFiles
             // 
             this.tpUserFiles.Controls.Add(this.dgvUserFiles);
-            this.tpUserFiles.Location = new System.Drawing.Point(4, 22);
+            this.tpUserFiles.Location = new System.Drawing.Point(4, 25);
+            this.tpUserFiles.Margin = new System.Windows.Forms.Padding(4);
             this.tpUserFiles.Name = "tpUserFiles";
-            this.tpUserFiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tpUserFiles.Size = new System.Drawing.Size(324, 160);
+            this.tpUserFiles.Padding = new System.Windows.Forms.Padding(4);
+            this.tpUserFiles.Size = new System.Drawing.Size(579, 260);
             this.tpUserFiles.TabIndex = 0;
             this.tpUserFiles.Text = "Your files";
             this.tpUserFiles.UseVisualStyleBackColor = true;
@@ -104,35 +111,44 @@
             this.dgvUserFiles.AllowUserToDeleteRows = false;
             this.dgvUserFiles.AutoGenerateColumns = false;
             this.dgvUserFiles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUserFiles.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvUserFiles.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvUserFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUserFiles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fileIdDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.dateOfCreationDataGridViewTextBoxColumn,
-            this.sizeDataGridViewTextBoxColumn,
-            this.ownerDataGridViewTextBoxColumn});
+            this.ownerDataGridViewTextBoxColumn,
+            this.Size});
             this.dgvUserFiles.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dgvUserFiles.DataSource = this.fileBindingSource1;
             this.dgvUserFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUserFiles.GridColor = System.Drawing.SystemColors.Window;
-            this.dgvUserFiles.Location = new System.Drawing.Point(3, 3);
+            this.dgvUserFiles.Location = new System.Drawing.Point(4, 4);
+            this.dgvUserFiles.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUserFiles.MultiSelect = false;
             this.dgvUserFiles.Name = "dgvUserFiles";
             this.dgvUserFiles.ReadOnly = true;
             this.dgvUserFiles.RowHeadersVisible = false;
             this.dgvUserFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserFiles.Size = new System.Drawing.Size(318, 154);
-            this.dgvUserFiles.TabIndex = 13;
+            this.dgvUserFiles.Size = new System.Drawing.Size(571, 252);
+            this.dgvUserFiles.TabIndex = 4;
             this.dgvUserFiles.SelectionChanged += new System.EventHandler(this.dgvUserFiles_SelectionChanged);
+            // 
+            // Size
+            // 
+            this.Size.DataPropertyName = "strSize";
+            this.Size.HeaderText = "Size";
+            this.Size.Name = "Size";
+            this.Size.ReadOnly = true;
             // 
             // tpAllowedFiles
             // 
             this.tpAllowedFiles.Controls.Add(this.dgvAllowedFiles);
-            this.tpAllowedFiles.Location = new System.Drawing.Point(4, 22);
+            this.tpAllowedFiles.Location = new System.Drawing.Point(4, 25);
+            this.tpAllowedFiles.Margin = new System.Windows.Forms.Padding(4);
             this.tpAllowedFiles.Name = "tpAllowedFiles";
-            this.tpAllowedFiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAllowedFiles.Size = new System.Drawing.Size(324, 160);
+            this.tpAllowedFiles.Padding = new System.Windows.Forms.Padding(4);
+            this.tpAllowedFiles.Size = new System.Drawing.Size(579, 260);
             this.tpAllowedFiles.TabIndex = 1;
             this.tpAllowedFiles.Text = "Allowed files";
             this.tpAllowedFiles.UseVisualStyleBackColor = true;
@@ -143,25 +159,34 @@
             this.dgvAllowedFiles.AllowUserToDeleteRows = false;
             this.dgvAllowedFiles.AutoGenerateColumns = false;
             this.dgvAllowedFiles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAllowedFiles.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvAllowedFiles.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvAllowedFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllowedFiles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fileIdDataGridViewTextBoxColumn1,
             this.nameDataGridViewTextBoxColumn1,
             this.dateOfCreationDataGridViewTextBoxColumn1,
             this.sizeDataGridViewTextBoxColumn1,
-            this.ownerDataGridViewTextBoxColumn1});
+            this.ownerDataGridViewTextBoxColumn1,
+            this.OwnerEmail});
             this.dgvAllowedFiles.DataSource = this.fileBindingSource1;
             this.dgvAllowedFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAllowedFiles.GridColor = System.Drawing.SystemColors.Window;
-            this.dgvAllowedFiles.Location = new System.Drawing.Point(3, 3);
+            this.dgvAllowedFiles.Location = new System.Drawing.Point(4, 4);
+            this.dgvAllowedFiles.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAllowedFiles.Name = "dgvAllowedFiles";
             this.dgvAllowedFiles.ReadOnly = true;
             this.dgvAllowedFiles.RowHeadersVisible = false;
             this.dgvAllowedFiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllowedFiles.Size = new System.Drawing.Size(318, 154);
+            this.dgvAllowedFiles.Size = new System.Drawing.Size(571, 252);
             this.dgvAllowedFiles.TabIndex = 0;
             this.dgvAllowedFiles.SelectionChanged += new System.EventHandler(this.dgvAllowedFiles_SelectionChanged);
+            // 
+            // OwnerEmail
+            // 
+            this.OwnerEmail.DataPropertyName = "OwnerName";
+            this.OwnerEmail.HeaderText = "Owner";
+            this.OwnerEmail.Name = "OwnerEmail";
+            this.OwnerEmail.ReadOnly = true;
             // 
             // gbFile
             // 
@@ -169,61 +194,74 @@
             this.gbFile.Controls.Add(this.btnAddFile);
             this.gbFile.Controls.Add(this.btnDeleteFile);
             this.gbFile.Controls.Add(this.btnDownloadFile);
-            this.gbFile.Location = new System.Drawing.Point(6, 47);
+            this.gbFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbFile.Location = new System.Drawing.Point(601, 96);
+            this.gbFile.Margin = new System.Windows.Forms.Padding(4);
             this.gbFile.Name = "gbFile";
-            this.gbFile.Size = new System.Drawing.Size(413, 68);
+            this.gbFile.Padding = new System.Windows.Forms.Padding(4);
+            this.gbFile.Size = new System.Drawing.Size(124, 254);
             this.gbFile.TabIndex = 9;
             this.gbFile.TabStop = false;
             this.gbFile.Text = "File";
             // 
             // btnShareFile
             // 
-            this.btnShareFile.Location = new System.Drawing.Point(249, 19);
+            this.btnShareFile.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnShareFile.Location = new System.Drawing.Point(11, 199);
+            this.btnShareFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnShareFile.Name = "btnShareFile";
-            this.btnShareFile.Size = new System.Drawing.Size(75, 38);
-            this.btnShareFile.TabIndex = 3;
+            this.btnShareFile.Size = new System.Drawing.Size(105, 47);
+            this.btnShareFile.TabIndex = 4;
             this.btnShareFile.Text = "Share";
-            this.btnShareFile.UseVisualStyleBackColor = true;
+            this.btnShareFile.UseVisualStyleBackColor = false;
             this.btnShareFile.Click += new System.EventHandler(this.btnShareFile_Click);
             // 
             // btnAddFile
             // 
-            this.btnAddFile.Location = new System.Drawing.Point(6, 19);
+            this.btnAddFile.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAddFile.Location = new System.Drawing.Point(11, 37);
+            this.btnAddFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddFile.Name = "btnAddFile";
-            this.btnAddFile.Size = new System.Drawing.Size(75, 38);
+            this.btnAddFile.Size = new System.Drawing.Size(105, 47);
             this.btnAddFile.TabIndex = 0;
             this.btnAddFile.Text = "Add";
-            this.btnAddFile.UseVisualStyleBackColor = true;
+            this.btnAddFile.UseVisualStyleBackColor = false;
             this.btnAddFile.Click += new System.EventHandler(this.btnAddFile_Click);
             // 
             // btnDeleteFile
             // 
-            this.btnDeleteFile.Location = new System.Drawing.Point(168, 19);
+            this.btnDeleteFile.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDeleteFile.Location = new System.Drawing.Point(11, 145);
+            this.btnDeleteFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteFile.Name = "btnDeleteFile";
-            this.btnDeleteFile.Size = new System.Drawing.Size(75, 38);
-            this.btnDeleteFile.TabIndex = 1;
+            this.btnDeleteFile.Size = new System.Drawing.Size(105, 47);
+            this.btnDeleteFile.TabIndex = 3;
             this.btnDeleteFile.Text = "Delete";
-            this.btnDeleteFile.UseVisualStyleBackColor = true;
+            this.btnDeleteFile.UseVisualStyleBackColor = false;
             this.btnDeleteFile.Click += new System.EventHandler(this.btnDeleteFile_Click);
             // 
             // btnDownloadFile
             // 
-            this.btnDownloadFile.Location = new System.Drawing.Point(87, 19);
+            this.btnDownloadFile.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDownloadFile.Location = new System.Drawing.Point(11, 91);
+            this.btnDownloadFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnDownloadFile.Name = "btnDownloadFile";
-            this.btnDownloadFile.Size = new System.Drawing.Size(75, 38);
+            this.btnDownloadFile.Size = new System.Drawing.Size(105, 47);
             this.btnDownloadFile.TabIndex = 2;
             this.btnDownloadFile.Text = "Download";
-            this.btnDownloadFile.UseVisualStyleBackColor = true;
+            this.btnDownloadFile.UseVisualStyleBackColor = false;
             this.btnDownloadFile.Click += new System.EventHandler(this.btnDownloadFile_Click);
             // 
             // btnCreateComment
             // 
-            this.btnCreateComment.Location = new System.Drawing.Point(338, 16);
+            this.btnCreateComment.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCreateComment.Location = new System.Drawing.Point(604, 145);
+            this.btnCreateComment.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateComment.Name = "btnCreateComment";
-            this.btnCreateComment.Size = new System.Drawing.Size(75, 38);
-            this.btnCreateComment.TabIndex = 13;
+            this.btnCreateComment.Size = new System.Drawing.Size(100, 47);
+            this.btnCreateComment.TabIndex = 5;
             this.btnCreateComment.Text = "Add";
-            this.btnCreateComment.UseVisualStyleBackColor = true;
+            this.btnCreateComment.UseVisualStyleBackColor = false;
             this.btnCreateComment.Click += new System.EventHandler(this.btnCreateComment_Click);
             // 
             // gbComments
@@ -231,9 +269,12 @@
             this.gbComments.Controls.Add(this.btnCreateComment);
             this.gbComments.Controls.Add(this.dgvComments);
             this.gbComments.Controls.Add(this.btnDeleteComment);
-            this.gbComments.Location = new System.Drawing.Point(6, 325);
+            this.gbComments.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gbComments.Location = new System.Drawing.Point(8, 362);
+            this.gbComments.Margin = new System.Windows.Forms.Padding(4);
             this.gbComments.Name = "gbComments";
-            this.gbComments.Size = new System.Drawing.Size(422, 175);
+            this.gbComments.Padding = new System.Windows.Forms.Padding(4);
+            this.gbComments.Size = new System.Drawing.Size(717, 254);
             this.gbComments.TabIndex = 11;
             this.gbComments.TabStop = false;
             this.gbComments.Text = "Comments";
@@ -244,42 +285,53 @@
             this.dgvComments.AllowUserToDeleteRows = false;
             this.dgvComments.AutoGenerateColumns = false;
             this.dgvComments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvComments.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvComments.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvComments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvComments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.commentIdDataGridViewTextBoxColumn,
             this.textDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
             this.authorDataGridViewTextBoxColumn,
-            this.fileDataGridViewTextBoxColumn});
+            this.fileDataGridViewTextBoxColumn,
+            this.AuthorEmail});
             this.dgvComments.DataSource = this.commentBindingSource;
-            this.dgvComments.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgvComments.GridColor = System.Drawing.SystemColors.Window;
-            this.dgvComments.Location = new System.Drawing.Point(3, 16);
+            this.dgvComments.Location = new System.Drawing.Point(5, 27);
+            this.dgvComments.Margin = new System.Windows.Forms.Padding(4);
             this.dgvComments.Name = "dgvComments";
             this.dgvComments.ReadOnly = true;
             this.dgvComments.RowHeadersVisible = false;
             this.dgvComments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvComments.Size = new System.Drawing.Size(326, 156);
-            this.dgvComments.TabIndex = 0;
+            this.dgvComments.Size = new System.Drawing.Size(573, 219);
+            this.dgvComments.TabIndex = 6;
+            // 
+            // AuthorEmail
+            // 
+            this.AuthorEmail.DataPropertyName = "AuthorName";
+            this.AuthorEmail.HeaderText = "Author";
+            this.AuthorEmail.Name = "AuthorEmail";
+            this.AuthorEmail.ReadOnly = true;
             // 
             // btnDeleteComment
             // 
-            this.btnDeleteComment.Location = new System.Drawing.Point(338, 60);
+            this.btnDeleteComment.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDeleteComment.Location = new System.Drawing.Point(604, 199);
+            this.btnDeleteComment.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteComment.Name = "btnDeleteComment";
-            this.btnDeleteComment.Size = new System.Drawing.Size(75, 38);
-            this.btnDeleteComment.TabIndex = 13;
+            this.btnDeleteComment.Size = new System.Drawing.Size(100, 47);
+            this.btnDeleteComment.TabIndex = 7;
             this.btnDeleteComment.Text = "Delete";
-            this.btnDeleteComment.UseVisualStyleBackColor = true;
+            this.btnDeleteComment.UseVisualStyleBackColor = false;
             this.btnDeleteComment.Click += new System.EventHandler(this.btnDeleteComment_Click);
             // 
             // lbUserName
             // 
             this.lbUserName.AutoSize = true;
-            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbUserName.Location = new System.Drawing.Point(6, 13);
+            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbUserName.Location = new System.Drawing.Point(8, 19);
+            this.lbUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(83, 17);
+            this.lbUserName.Size = new System.Drawing.Size(110, 24);
             this.lbUserName.TabIndex = 12;
             this.lbUserName.Text = "Welcome, ";
             // 
@@ -311,6 +363,7 @@
             this.authorDataGridViewTextBoxColumn.HeaderText = "Author";
             this.authorDataGridViewTextBoxColumn.Name = "authorDataGridViewTextBoxColumn";
             this.authorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.authorDataGridViewTextBoxColumn.Visible = false;
             // 
             // fileDataGridViewTextBoxColumn
             // 
@@ -345,13 +398,6 @@
             this.dateOfCreationDataGridViewTextBoxColumn.HeaderText = "Date Of Creation";
             this.dateOfCreationDataGridViewTextBoxColumn.Name = "dateOfCreationDataGridViewTextBoxColumn";
             this.dateOfCreationDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sizeDataGridViewTextBoxColumn
-            // 
-            this.sizeDataGridViewTextBoxColumn.DataPropertyName = "Size";
-            this.sizeDataGridViewTextBoxColumn.HeaderText = "Size";
-            this.sizeDataGridViewTextBoxColumn.Name = "sizeDataGridViewTextBoxColumn";
-            this.sizeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ownerDataGridViewTextBoxColumn
             // 
@@ -389,7 +435,7 @@
             // 
             // sizeDataGridViewTextBoxColumn1
             // 
-            this.sizeDataGridViewTextBoxColumn1.DataPropertyName = "Size";
+            this.sizeDataGridViewTextBoxColumn1.DataPropertyName = "strSize";
             this.sizeDataGridViewTextBoxColumn1.HeaderText = "Size";
             this.sizeDataGridViewTextBoxColumn1.Name = "sizeDataGridViewTextBoxColumn1";
             this.sizeDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -401,24 +447,33 @@
             this.ownerDataGridViewTextBoxColumn1.HeaderText = "Owner";
             this.ownerDataGridViewTextBoxColumn1.Name = "ownerDataGridViewTextBoxColumn1";
             this.ownerDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.ownerDataGridViewTextBoxColumn1.Visible = false;
             this.ownerDataGridViewTextBoxColumn1.Width = 63;
             // 
             // fileBindingSource
             // 
             this.fileBindingSource.DataSource = typeof(FileStorage.Model.File);
             // 
+            // fileBindingSource2
+            // 
+            this.fileBindingSource2.DataSource = typeof(FileStorage.Model.File);
+            // 
             // MainForm
             // 
             this.AcceptButton = this.btnAddFile;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(458, 506);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(755, 634);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.gbComments);
             this.Controls.Add(this.tcFiles);
             this.Controls.Add(this.gbFile);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your File Storage";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tcFiles.ResumeLayout(false);
@@ -432,6 +487,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.commentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,26 +508,29 @@
         private System.Windows.Forms.BindingSource fileBindingSource1;
         private System.Windows.Forms.BindingSource fileBindingSource;
         private System.Windows.Forms.DataGridView dgvUserFiles;
+        private System.Windows.Forms.DataGridView dgvAllowedFiles;
+        private System.Windows.Forms.DataGridView dgvComments;
+        private System.Windows.Forms.BindingSource commentBindingSource;
+        private System.Windows.Forms.Button btnCreateComment;
+        private System.Windows.Forms.Button btnDeleteComment;
+        private System.Windows.Forms.BindingSource fileBindingSource2;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfCreationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sizeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ownerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dgvAllowedFiles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Size;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileIdDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfCreationDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn sizeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ownerDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridView dgvComments;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OwnerEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn textDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn authorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource commentBindingSource;
-        private System.Windows.Forms.Button btnCreateComment;
-        private System.Windows.Forms.Button btnDeleteComment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AuthorEmail;
     }
 }
 

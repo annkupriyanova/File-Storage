@@ -4,4 +4,3 @@ C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Release\NLog.dll
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\bin\Release\NLog.xml
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Release\FileStorage.Log.dll
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Release\FileStorage.Log.pdb
-C:\Users\annku\Source\Repos\File-Storage\FileStorage.Log\obj\Release\FileStorage.Log.csprojResolveAssemblyReference.cache

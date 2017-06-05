@@ -10,5 +10,15 @@ namespace FileStorage.Model
         public DateTime DateOfCreation { get; set; }
         public double Size { get; set; }
         public User Owner { get; set; }
+
+        public string OwnerName
+        {
+            get { return Owner.Name; }
+        }
+
+        public string strSize
+        {
+            get { return Size.ToString() + " Kb"; }
+        }
     }
 }

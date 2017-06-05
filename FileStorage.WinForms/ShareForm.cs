@@ -13,7 +13,7 @@ namespace FileStorage.WinForms
 {
     public partial class ShareForm : Form
     {
-        public string email = "";
+        public string userName = "";
         public Guid selectedUserId = new Guid();
 
         public ShareForm(User[] allowedUsers)
@@ -24,7 +24,7 @@ namespace FileStorage.WinForms
 
         private void btnShareFile_Click(object sender, EventArgs e)
         {
-            email = tbUserEmail.Text;
+            userName = tbUserName.Text;
             DialogResult = DialogResult.OK;
             Dispose();
         }

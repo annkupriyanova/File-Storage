@@ -24,3 +24,8 @@
 2017-06-05 19:37:28.3001|INFO|FileStorage.Log.Logger|Create comment, id: e5d810bd-e3e4-4fd1-8869-f8a0de9bdfcd
 2017-06-05 19:37:46.4529|INFO|FileStorage.Log.Logger|Create file, id: 8623128f-0028-4512-805a-0536c5692d6c
 2017-06-05 19:37:46.4685|INFO|FileStorage.Log.Logger|Update content of file, id: 8623128f-0028-4512-805a-0536c5692d6c
+2017-06-05 19:53:36.0296|INFO|FileStorage.Log.Logger|Create file, id: d28a137a-6fca-41af-8ff0-8d2111e07760
+2017-06-05 19:53:36.0765|INFO|FileStorage.Log.Logger|Update content of file, id: d28a137a-6fca-41af-8ff0-8d2111e07760
+2017-06-05 20:59:18.0658|INFO|FileStorage.Log.Logger|Give access to file, id: 8623128f-0028-4512-805a-0536c5692d6c to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-05 21:00:12.4240|INFO|FileStorage.Log.Logger|Delete access to file, id: 8623128f-0028-4512-805a-0536c5692d6c for user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-06 00:29:52.5877|INFO|FileStorage.Log.Logger|Give access to file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 

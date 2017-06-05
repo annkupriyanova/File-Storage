@@ -9,5 +9,10 @@ namespace FileStorage.Model
         public DateTime Date { get; set; } 
         public User Author { get; set; }
         public File File { get; set; }
+
+        public string AuthorName
+        {
+            get { return Author.Name; }
+        }
     }
 }

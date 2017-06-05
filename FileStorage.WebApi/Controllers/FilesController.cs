@@ -103,16 +103,17 @@ namespace FileStorage.WebApi.Controllers
 
         [Route("api/files/{fileId}/sharings")]
         [HttpPut]
-        public void GiveAccessToFile(Guid fileId, [FromBody]Guid userId)
+        public void GiveAccessToFile(Guid fileId, [FromBody]string userName)
         {
             try
             {
-                Log.Logger.Servicelog.Info("Give access to file, id: {0} to user, id: {1} ", fileId, userId);
-                _filesRepository.GiveAccessToFile(userId, fileId);
+                var user = _usersRepository.Get(userName);
+                Log.Logger.Servicelog.Info("Give access to file, id: {0} to user, id: {1} ", fileId, user.UserId);
+                _filesRepository.GiveAccessToFile(user.UserId, fileId);
             }
             catch (Exception ex)
             {
-                Log.Logger.Servicelog.Error("Error while giving user with id: {0} access to file, id: {1} | " + ex.Message, userId, fileId);
+                Log.Logger.Servicelog.Error("Error while giving user with name: {0} access to file, id: {1} | " + ex.Message, userName, fileId);
                 throw;
             }
         }

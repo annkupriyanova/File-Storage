@@ -37,17 +37,19 @@
             // tbComment
             // 
             this.tbComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbComment.Location = new System.Drawing.Point(12, 29);
+            this.tbComment.Location = new System.Drawing.Point(16, 36);
+            this.tbComment.Margin = new System.Windows.Forms.Padding(4);
             this.tbComment.Multiline = true;
             this.tbComment.Name = "tbComment";
-            this.tbComment.Size = new System.Drawing.Size(260, 71);
+            this.tbComment.Size = new System.Drawing.Size(345, 86);
             this.tbComment.TabIndex = 0;
             // 
             // lblComment
             // 
             this.lblComment.AutoSize = true;
             this.lblComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblComment.Location = new System.Drawing.Point(12, 9);
+            this.lblComment.Location = new System.Drawing.Point(16, 11);
+            this.lblComment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComment.Name = "lblComment";
             this.lblComment.Size = new System.Drawing.Size(155, 17);
             this.lblComment.TabIndex = 1;
@@ -55,35 +57,47 @@
             // 
             // btnCreateComment
             // 
-            this.btnCreateComment.Location = new System.Drawing.Point(12, 106);
+            this.btnCreateComment.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCreateComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCreateComment.Location = new System.Drawing.Point(16, 130);
+            this.btnCreateComment.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateComment.Name = "btnCreateComment";
-            this.btnCreateComment.Size = new System.Drawing.Size(75, 38);
-            this.btnCreateComment.TabIndex = 2;
-            this.btnCreateComment.Text = "Save comment";
-            this.btnCreateComment.UseVisualStyleBackColor = true;
+            this.btnCreateComment.Size = new System.Drawing.Size(105, 47);
+            this.btnCreateComment.TabIndex = 1;
+            this.btnCreateComment.Text = "Add";
+            this.btnCreateComment.UseVisualStyleBackColor = false;
             this.btnCreateComment.Click += new System.EventHandler(this.btnCreateComment_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(197, 106);
+            this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCancel.Location = new System.Drawing.Point(263, 130);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 38);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Size = new System.Drawing.Size(100, 47);
+            this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // CommentForm
             // 
             this.AcceptButton = this.btnCreateComment;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 156);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(379, 192);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreateComment);
             this.Controls.Add(this.lblComment);
             this.Controls.Add(this.tbComment);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CommentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Comment";
             this.ResumeLayout(false);
             this.PerformLayout();

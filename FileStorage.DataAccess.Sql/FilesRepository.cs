@@ -115,7 +115,7 @@ namespace FileStorage.DataAccess.Sql
                 {
                     command.CommandText = "UPDATE Files SET Content = @Content, Size = @Size where FileId = @FileId";
                     command.Parameters.AddWithValue("@Content", content);
-                    command.Parameters.AddWithValue("@Size", content.Length);
+                    command.Parameters.AddWithValue("@Size", content.Length/1000);
                     command.Parameters.AddWithValue("@FileId", id);
                     command.ExecuteNonQuery();
                 }

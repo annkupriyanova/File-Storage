@@ -17,6 +17,19 @@ namespace FileStorage.WinForms
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        /*
+        public User CreateUser(User user)
+        {
+            var response = _client.PostAsJsonAsync("files", file).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<File>().Result;
+                return result.FileId;
+            }
+            throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+        */
+
         public Comment[] GetFileComments(Guid id)
         {
             var response = _client.GetAsync($"files/{id}/comments").Result;
@@ -133,9 +146,9 @@ namespace FileStorage.WinForms
                 throw new ServiceException("Error: {0}", response.StatusCode);
         }
 
-        public void GiveAccessToFile(Guid fileId, Guid userId)
+        public void GiveAccessToFile(Guid fileId, string userName)
         {
-            var response = _client.PutAsJsonAsync($"files/{fileId}/sharings", userId).Result;
+            var response = _client.PutAsJsonAsync($"files/{fileId}/sharings", userName).Result;
             if (!response.IsSuccessStatusCode)
                 throw new ServiceException("Error: {0}", response.StatusCode);
         }

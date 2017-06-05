@@ -104,6 +104,33 @@ namespace FileStorage.DataAccess.Sql
             }
         }
 
+        public User Get(string name)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT UserId, Name, Email FROM Users WHERE Name = @Name";
+                    command.Parameters.AddWithValue("@Name", name);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            return new User
+                            {
+                                UserId = Guid.Parse(reader.GetString(reader.GetOrdinal("UserId"))),
+                                Email = reader.GetString(reader.GetOrdinal("Email")),
+                                Name = reader.GetString(reader.GetOrdinal("Name")),
+                            };
+                        }
+                        throw new ArgumentException("User not found");
+                    }
+                }
+            }
+        }
+
         public IEnumerable<User> GetAllowedUsers(Guid fileId)
         {
             var result = new List<User>();

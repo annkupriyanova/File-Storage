@@ -84,13 +84,13 @@ namespace FileStorage.WinForms
                         var fileId = _client.CreateFile(file);
                         _client.UploadFileContent(fileId, fileContent);
                         RefreshFileList();
-                        MessageBox.Show($"Файл {file.Name} успешно загружен", "Загрузка файла", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"File {file.Name} was added successfully", "File Download", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Не удалось загрузить файл, текст ошибки: {Environment.NewLine}{exception.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"File was not added. Error message: {Environment.NewLine}{exception.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -116,7 +116,7 @@ namespace FileStorage.WinForms
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Не удалось удалить файл, текст ошибки: {Environment.NewLine}{exception.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"File was not deleted. Error message: {Environment.NewLine}{exception.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -152,7 +152,7 @@ namespace FileStorage.WinForms
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Не удалось скачать файл, текст ошибки: {Environment.NewLine}{exception.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"File was not downloaded. Error message: {Environment.NewLine}{exception.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -193,13 +193,13 @@ namespace FileStorage.WinForms
                         };
                         _client.CreateComment(comment);
                         RefreshComments();
-                        MessageBox.Show($"Комментарий  успешно добавлен", "Добавление комментария", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Comment was added successfully", "Comment", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Не удалось добавить комментарий, текст ошибки: {Environment.NewLine}{exception.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Comment was not added. Error message: {Environment.NewLine}{exception.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -219,7 +219,7 @@ namespace FileStorage.WinForms
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Не удалось удалить комментарий, текст ошибки: {Environment.NewLine}{exception.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Comment was not deleted. Error message: {Environment.NewLine}{exception.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -247,16 +247,16 @@ namespace FileStorage.WinForms
                     {
                         case DialogResult.OK:
                             {
-                                var email = shareForm.email;
-                                _client.GiveAccessToFile(fileId, _userId);
-                                MessageBox.Show($"Добавлен доступ к файлу", "Доступ к файлу", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                var userName = shareForm.userName;
+                                _client.GiveAccessToFile(fileId, userName);
+                                MessageBox.Show($"User {userName} got access to your file", "File Access", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
                         case DialogResult.No:
                             {
                                 var selectedUserId = shareForm.selectedUserId;
                                 _client.DeleteAccessToFile(fileId, selectedUserId);
-                                MessageBox.Show($"Доступ к файлу удален", "Доступ к файлу", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show($"Access to file is deleted", "File Access", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 break;
                             }
                         default:
