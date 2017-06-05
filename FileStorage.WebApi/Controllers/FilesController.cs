@@ -147,5 +147,20 @@ namespace FileStorage.WebApi.Controllers
                 throw;
             }
         }
+
+        [HttpGet]
+        [Route("api/files/{id}/sharings")]
+        public IEnumerable<User> GetAllowedUsers(Guid id)
+        {
+            try
+            {
+                return _usersRepository.GetAllowedUsers(id);
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Servicelog.Error("Error while getting allowed users for file, id: {0} | " + ex.Message, id);
+                throw;
+            }
+        }
     }
 }

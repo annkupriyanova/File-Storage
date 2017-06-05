@@ -1,0 +1,26 @@
+2017-06-03 22:21:45.4792|INFO|FileStorage.Log.Logger|Create file, id: 0f380a3e-86cb-4177-aba8-430fd491cee4
+2017-06-03 22:21:45.5643|INFO|FileStorage.Log.Logger|Update content of file, id: 0f380a3e-86cb-4177-aba8-430fd491cee4
+2017-06-03 23:06:33.6130|INFO|FileStorage.Log.Logger|Delete file, id: 921fd361-c2ea-4d22-96a4-6461b2e253e2
+2017-06-03 23:06:37.8208|INFO|FileStorage.Log.Logger|Delete file, id: 0f380a3e-86cb-4177-aba8-430fd491cee4
+2017-06-03 23:06:46.8314|INFO|FileStorage.Log.Logger|Create file, id: 9b5e0ae6-cead-48ea-8039-4f643ff7ae1d
+2017-06-03 23:06:46.8499|INFO|FileStorage.Log.Logger|Update content of file, id: 9b5e0ae6-cead-48ea-8039-4f643ff7ae1d
+2017-06-03 23:06:52.7197|INFO|FileStorage.Log.Logger|Delete file, id: 9b5e0ae6-cead-48ea-8039-4f643ff7ae1d
+2017-06-03 23:06:59.6286|INFO|FileStorage.Log.Logger|Create file, id: 5b6c8d17-d67b-4d2a-82c9-898fb8b6dac4
+2017-06-03 23:06:59.6441|INFO|FileStorage.Log.Logger|Update content of file, id: 5b6c8d17-d67b-4d2a-82c9-898fb8b6dac4
+2017-06-03 23:38:32.4866|ERROR|FileStorage.Log.Logger|Error while creating new comment | Ссылка на объект не указывает на экземпляр объекта.
+2017-06-03 23:42:10.4449|ERROR|FileStorage.Log.Logger|Error while creating new comment | Ссылка на объект не указывает на экземпляр объекта.
+2017-06-03 23:42:38.8560|INFO|FileStorage.Log.Logger|Create comment, id: 069c4f02-7f74-4513-bffb-5b194ad485c4
+2017-06-05 16:07:40.0092|INFO|FileStorage.Log.Logger|Create comment, id: 844dd2d0-ddc3-4940-aa54-506f582d001d
+2017-06-05 16:42:19.0612|INFO|FileStorage.Log.Logger|Create comment, id: a49da490-00b0-4699-a91c-1eb106ba6dfc
+2017-06-05 16:42:28.0208|INFO|FileStorage.Log.Logger|Delete comment, id: a49da490-00b0-4699-a91c-1eb106ba6dfc
+2017-06-05 17:22:42.2004|INFO|FileStorage.Log.Logger|Give access to file, id: 21daedbc-2a9a-4bcc-b223-a2ab23afe421 to user, id: e5277da8-89f7-4a5f-a7a3-2937fae9ac17 
+2017-06-05 17:36:39.8645|INFO|FileStorage.Log.Logger|Create file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6
+2017-06-05 17:36:39.9022|INFO|FileStorage.Log.Logger|Update content of file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6
+2017-06-05 17:37:00.0050|INFO|FileStorage.Log.Logger|Give access to file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 to user, id: 705537e6-c136-4c62-a34e-7871961d6d30 
+2017-06-05 19:15:30.6128|INFO|FileStorage.Log.Logger|Delete access to file, id: de5b7436-33da-42ee-8b0d-f5e046be8bf6 for user, id: 705537e6-c136-4c62-a34e-7871961d6d30 
+2017-06-05 19:23:37.5567|INFO|FileStorage.Log.Logger|Create comment, id: 04c0f77f-f260-4357-8b78-9b9ad88bc4a9
+2017-06-05 19:24:19.1140|INFO|FileStorage.Log.Logger|Delete comment, id: 04c0f77f-f260-4357-8b78-9b9ad88bc4a9
+2017-06-05 19:27:37.1226|INFO|FileStorage.Log.Logger|Create comment, id: 10b76e05-6583-44b4-9d11-b28567aef549
+2017-06-05 19:37:28.3001|INFO|FileStorage.Log.Logger|Create comment, id: e5d810bd-e3e4-4fd1-8869-f8a0de9bdfcd
+2017-06-05 19:37:46.4529|INFO|FileStorage.Log.Logger|Create file, id: 8623128f-0028-4512-805a-0536c5692d6c
+2017-06-05 19:37:46.4685|INFO|FileStorage.Log.Logger|Update content of file, id: 8623128f-0028-4512-805a-0536c5692d6c

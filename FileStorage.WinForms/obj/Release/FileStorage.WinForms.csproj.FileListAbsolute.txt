@@ -8,8 +8,10 @@ C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\bin\Release\FileSt
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\bin\Release\Newtonsoft.Json.xml
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\bin\Release\System.Net.Http.Formatting.xml
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.csprojResolveAssemblyReference.cache
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.CommentForm.resources
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.MainForm.resources
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.Properties.Resources.resources
+C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.ShareForm.resources
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.csproj.GenerateResource.Cache
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.exe
 C:\Users\annku\Source\Repos\File-Storage\FileStorage.WinForms\obj\Release\FileStorage.WinForms.pdb

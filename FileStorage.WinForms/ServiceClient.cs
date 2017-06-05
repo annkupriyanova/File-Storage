@@ -17,6 +17,17 @@ namespace FileStorage.WinForms
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        public Comment[] GetFileComments(Guid id)
+        {
+            var response = _client.GetAsync($"files/{id}/comments").Result;
+            if(response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<Comment[]>().Result;
+                return result;
+            }
+            throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
         public File[] GetUserFiles()
         {
             var response = _client.GetAsync($"users/{_currentUserId}/files").Result;
@@ -75,12 +86,73 @@ namespace FileStorage.WinForms
             throw new ServiceException("Error: {0}", response.StatusCode);
         }
 
+        public File GetFile(Guid fileId)
+        {
+            var response = _client.GetAsync($"files/{fileId}").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<File>().Result;
+                return result;
+            }
+            throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
         public User GetUser()
         {
             var response = _client.GetAsync($"users/{_currentUserId}").Result;
             if (response.IsSuccessStatusCode)
             {
                 var result = response.Content.ReadAsAsync<User>().Result;
+                return result;
+            }
+            throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public Guid CreateComment(Comment comment)
+        {
+            var response = _client.PostAsJsonAsync("comments", comment).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<Comment>().Result;
+                return result.CommentId;
+            }
+            throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public void EditComment(Guid id, Comment comment)
+        {
+            var response = _client.PutAsJsonAsync($"comments/{id}", comment).Result;
+            if (!response.IsSuccessStatusCode)
+                throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public void DeleteComment(Guid commentId)
+        {
+            var response = _client.DeleteAsync($"comments/{commentId}").Result;
+            if (!response.IsSuccessStatusCode)
+                throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public void GiveAccessToFile(Guid fileId, Guid userId)
+        {
+            var response = _client.PutAsJsonAsync($"files/{fileId}/sharings", userId).Result;
+            if (!response.IsSuccessStatusCode)
+                throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public void DeleteAccessToFile(Guid fileId, Guid userId)
+        {
+            var response = _client.DeleteAsync($"files/{fileId}/sharings/{userId}").Result;
+            if (!response.IsSuccessStatusCode)
+                throw new ServiceException("Error: {0}", response.StatusCode);
+        }
+
+        public User[] GetAllowedUsers(Guid fileId)
+        {
+            var response = _client.GetAsync($"files/{fileId}/sharings").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var result = response.Content.ReadAsAsync<User[]>().Result;
                 return result;
             }
             throw new ServiceException("Error: {0}", response.StatusCode);
